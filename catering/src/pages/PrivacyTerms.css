@@ -1,0 +1,103 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Common Page Styling for Privacy & Terms */
+.terms-page, .privacy-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffefe6); /* White to light orange */
+  padding: 50px 20px;
+  
+}
+
+/* Common Container Styling */
+.terms-container, .privacy-container {
+  max-width: 900px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(255, 102, 0, 0.2); /* Orange shadow */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  border-left: 8px solid #ff6600;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+
+}
+
+/* Title Styling */
+.terms-container h1, .privacy-container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #000000; /* Elite Caterings Orange */
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+/* Paragraph Styling */
+.terms-container p, .privacy-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Section Headings */
+.terms-container h2, .privacy-container h2 {
+  font-size: 22px;
+  margin-top: 25px;
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Lists */
+.terms-container ul, .privacy-container ul {
+  margin-left: 25px;
+  list-style: none;
+}
+
+.terms-container ul li, .privacy-container ul li {
+  font-size: 16px;
+  color: #444;
+  margin: 8px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* Custom Checkmark for Lists */
+.terms-container ul li::before, .privacy-container ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6600; /* Orange checkmark */
+  font-weight: bold;
+}
+
+/* Sections */
+.terms-container section, .privacy-container section {
+  margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container, .privacy-container {
+    padding: 25px;
+    border-left: 6px solid #ff6600;
+  }
+
+  .terms-container h1, .privacy-container h1 {
+    font-size: 26px;
+  }
+
+  .terms-container h2, .privacy-container h2 {
+    font-size: 20px;
+  }
+
+  .terms-container p, .terms-container ul li,
+  .privacy-container p, .privacy-container ul li {
+    font-size: 14px;
+  }
+}

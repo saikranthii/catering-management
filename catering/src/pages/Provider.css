@@ -1,0 +1,354 @@
+/* src/pages/Provider.css */
+
+/* Reset and base styles */
+.provider-container body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.provider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: transparent !important;
+  border-radius: 10px;
+  margin-top: 25px;
+  position: relative; /* For positioning suggestion box */
+}
+
+/* Dashboard title */
+.providerhead {
+  text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Category section */
+.category {
+  margin-bottom: 45px;
+}
+
+.category h2 {
+  font-size: 1.9rem;
+  color: #616161; /* Dark grey */
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #ff9800; /* Bright orange */
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Table styling */
+.items-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  table-layout: fixed; /* Ensures column widths are respected */
+}
+
+/* Table header */
+.items-table thead {
+  background: linear-gradient(90deg, #ff9800, #f57c00); /* Orange gradient */
+  color: #fff;
+}
+
+.items-table th {
+  padding: 14px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+  text-align: left;
+}
+
+/* Define column widths */
+.items-table th:nth-child(1),
+.items-table td:nth-child(1) {
+  width: 10%; /* Item No */
+}
+
+.items-table th:nth-child(2),
+.items-table td:nth-child(2) {
+  width: 30%; /* Name */
+}
+
+.items-table th:nth-child(3),
+.items-table td:nth-child(3) {
+  width: 15%; /* Price */
+}
+
+.items-table th:nth-child(4),
+.items-table td:nth-child(4) {
+  width: 15%; /* Quantity */
+}
+
+.items-table th:nth-child(5),
+.items-table td:nth-child(5) {
+  width: 30%; /* Actions */
+}
+
+/* Table body */
+.items-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.items-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e0e0e0; /* Light grey */
+  color: #424242; /* Medium grey */
+  font-size: 1rem;
+  text-align: left;
+  vertical-align: middle; /* Center align content vertically */
+}
+
+/* Alternating row colors */
+.items-table tbody tr:nth-child(even) {
+  background-color: #fafafa; /* Very light grey */
+}
+
+/* Hover effect */
+.items-table tbody tr:hover {
+  background-color: #fff3e0; /* Light orange tint */
+  transform: scale(1.01);
+}
+
+/* Specific column styling */
+.items-table td:nth-child(1) {
+  /* Item No */
+  font-weight: 600;
+  color: #757575; /* Medium grey */
+}
+
+.items-table td:nth-child(2) {
+  /* Name */
+  font-weight: 500;
+}
+
+.items-table td:nth-child(3) {
+  /* Price */
+  color: #ff0000; /* Pinkish-red for contrast */
+  font-weight: 600;
+}
+
+.items-table td:nth-child(4) {
+  /* Quantity */
+  color: #388e3c; /* Green for quantity */
+  font-weight: 600;
+}
+
+/* Editable input fields */
+.edit-input {
+  width: 80px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #424242;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.edit-input:focus {
+  border-color: #ff9800; /* Orange focus */
+  outline: none;
+}
+
+/* Buttons */
+.edit-btn,
+.save-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #570077; /* Blue */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #320045;
+  transform: translateY(-1px);
+}
+
+.save-btn {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+.cancel-btn {
+  background-color: #ff0000; /* Red */
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #bc0202;
+  transform: translateY(-1px);
+}
+
+/* Suggestion box */
+.suggestion-box {
+  position: absolute; /* Relative to .provider-container */
+  top: 120px; /* Moves upwards within the container */
+  right: -50px; /* Moves to the right within the container */
+  width: 250px;
+  background-color: #fff;
+  border: 2px solid #ff9800; /* Orange border */
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+.suggestion-box h3 {
+  font-size: 1.2rem;
+  color: #ff5722; /* Orange */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.suggestion-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-box li {
+  font-size: 0.95rem;
+  color: #424242; /* Medium grey */
+  margin-bottom: 8px;
+}
+
+.suggestion-box li strong {
+  color: #ff5722; /* Orange for item name */
+  font-weight: 600;
+}
+
+/* Back to Menu link (uncomment if needed) */
+.provider-container a {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  color: #ff5722; /* Orange */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.provider-container a:hover {
+  color: #e64a19; /* Darker orange */
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .provider-container {
+    padding: 20px;
+    margin: 15px;
+    margin-left: 10px;
+  }
+
+  .providerhead {
+    font-size: 2.2rem;
+  }
+
+  .category h2 {
+    font-size: 1.6rem;
+  }
+
+  .items-table th,
+  .items-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .edit-input {
+    width: 60px;
+  }
+
+  .edit-btn,
+  .save-btn,
+  .cancel-btn {
+    padding: 5px 10px;
+    margin: 0 3px;
+  }
+
+  .suggestion-box {
+    width: 200px;
+    right: 10px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .provider-container {
+    padding: 15px;
+    margin-left: 5px;
+  }
+
+  .items-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .items-table th,
+  .items-table td {
+    min-width: 80px; /* Minimum width for scrolling */
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .providerhead {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: -20px;
+  }
+
+  .category h2 {
+    font-size: 1.4rem;
+  }
+
+  .edit-input {
+    width: 50px;
+  }
+
+  .edit-btn,
+  .save-btn,
+  .cancel-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .suggestion-box {
+    width: 180px;
+    top: 150px;
+    right: 5px;
+    padding: 10px;
+  }
+
+  .suggestion-box h3 {
+    font-size: 1rem;
+  }
+
+  .suggestion-box li {
+    font-size: 0.85rem;
+  }
+}

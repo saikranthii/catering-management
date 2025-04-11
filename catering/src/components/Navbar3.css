@@ -1,0 +1,214 @@
+
+
+/* Navbar Container */
+.navbar3 {
+    background: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    margin-top: -30px;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-text {
+    font-family: "Salsa", sans-serif;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: -70px;
+}
+
+
+
+
+
+/* 
+
+.navbar3 .nav-links button {
+    background: #ffffff;
+    border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.8);
+    border: none; 
+    color: #EA6D27; 
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.nav-links button:hover {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+.nav-links .active {
+    background: #000000;
+    color: #720a0a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.8);
+    transform: scale(1.05);
+}
+.navbar3 .nav-links {
+    list-style: none;
+    display: flex;
+    position: relative;
+    z-index: 10; 
+    margin-bottom: -100px;
+    gap: 18px;
+    margin-left: auto; 
+    margin-right: -285px;
+} */
+
+
+.navbar3 .nav-link {
+    background-color: #EA6D27; /* Lighter teal on hover */
+    color: #ffffff;
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 100px;
+   
+    right: -300px;
+    font-family: 'Arial', sans-serif; /* Clean font */
+    padding: 0.5rem 1rem; /* Padding for clickable area */
+    transition: all 0.3s ease; /* Smooth transition for hover/active */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.8);
+
+  }
+  
+  .navbar3 .nav-link:hover {
+    background-color: #EA6D27; 
+    color: #ffffff; 
+    box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.8);
+  }
+  
+/* Import DM Sans Font (if not already present) */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Profile Container */
+.navbar3 .profile-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 1525px;
+    margin-bottom: -80px
+}
+
+/* Profile Circle */
+.navbar3 .profile-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #EA6D27 0%, #ff8c00 100%);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(234, 109, 39, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar3 .profile-circle:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(234, 109, 39, 0.6);
+}
+
+/* Profile Dropdown */
+.navbar3 .profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    border: 2px solid #EA6D27; /* Orange outline */
+}
+
+/* Show dropdown on hover */
+.navbar3 .profile-container:hover .profile-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Profile Info */
+.navbar3 .profile-info {
+    margin-bottom: 15px;
+}
+
+.navbar3 .profile-info h4 {
+    margin: 0 0 10px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #EA6D27;
+    text-transform: capitalize;
+}
+
+.navbar3 .profile-info p {
+    margin: 0 0 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Logout Button */
+.navbar3 .logout-btn {
+    background: linear-gradient(135deg, #EA6D27 0%, #ff8c00 100%);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(234, 109, 39, 0.3);
+}
+
+.navbar3 .logout-btn:hover {
+    background: linear-gradient(135deg, #d65e20 0%, #e07b00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(234, 109, 39, 0.5);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        margin-left: 0;
+    }
+
+    .profile-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+
+    .profile-dropdown {
+        position: static;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: none;
+        border: 2px solid #EA6D27; /* Maintain orange outline on mobile */
+    }
+}

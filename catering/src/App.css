@@ -1,0 +1,9 @@
+body {
+  background-color: #ffffff;
+}
+
+/* Enable smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+

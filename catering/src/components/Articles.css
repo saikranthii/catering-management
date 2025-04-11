@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.articles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering */
+  text-align: center;
+  margin-top: 280px;
+  
+}
+
+/* Center Title */
+.articles-title {
+    color: rgb(0, 0, 0);
+    font-family: David Libre;
+    font-weight: 500;
+    font-size: 55px;
+    opacity: 1;
+    line-height: 1.2;
+    margin-top: -150px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Center the entire grid */
+.articles-grid {
+  display: grid;
+  grid-template-columns: 636px 1fr; /* Left: Big Image, Right: 2x2 grid */
+  gap: 20px;
+  align-items: start;
+  justify-content: center; /* Centers the grid */
+}
+
+/* Left Side - Big Featured Image */
+.featured-article {
+  width: 636px;
+  height: 724px;
+  background: white;
+  border-radius: 12px;
+  /* padding: 20px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  justify-content: center;
+}
+
+.article-card.featured {
+  text-align: center;
+}
+
+.article-card.featured .featured-image {
+    width: 100%;
+    height: 452px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0; /* Rounded top corners, sharp bottom corners */
+    margin-top: -53px;
+  }
+  
+
+.article-content {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.article-title {
+  font-size: 20px;
+  color: rgba(43,46,35,1);
+  font-family: DM Sans;
+  font-weight: medium;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  color: #666;
+}
+
+.article-description {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* Right Side - 2x2 Grid for Small Images */
+.articles-list {
+  display: grid;
+  grid-template-columns: 306px 306px; /* Two columns */
+  grid-template-rows: 354px 354px; /* Two rows */
+  gap: 15px;
+  justify-content: center; /* Center grid items */
+}
+
+/* Small Articles */
+.article-card.small {
+  width: 306px;
+  height: 354px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  /* padding: 15px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  justify-content: center;
+}
+
+.article-card.small:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+  
+
+.article-card.small .small-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+
+  .featured-article {
+    width: 100%;
+  }
+
+  .article-card.featured {
+    width: 100%;
+  }
+
+  .article-card.featured .featured-image {
+    height: auto;
+  }
+
+  .articles-list {
+    grid-template-columns: 1fr 1fr; /* Keep 2x2 grid */
+  }
+
+  .article-card.small {
+    width: 100%;
+  }
+
+  .article-card.small .small-image {
+    height: auto;
+  }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.items-container1 {
+  text-align: center;
+  margin-top: 150px;
+  background: url("../images/items.png") no-repeat center center/cover;
+  padding: 50px 20px;
+  height: 460px;
+  margin-bottom: 150px;
+  color: #000;
+  position: relative;
+}
+
+/* Overlay Effect */
+.items-container1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.items-container1 > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.items-container1 .menu-title {
+  color: rgb(0, 0, 0);
+  font-family: David Libre;
+  font-weight: 500;
+  font-size: 55px;
+  opacity: 1;
+  line-height: 1.2;
+  margin-top: -150px;
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+/* Grid Layout */
+.items-container1 .menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25.7px;
+  flex-wrap: wrap;
+}
+
+/* Individual Menu Items */
+.items-container1 .menu-item {
+
+  padding: 19px;
+  border-radius: 10px;
+  width: 269px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.items-container1 .menu-item:hover {
+  transform: scale(1.2);
+  color: #EA6D27;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Icons */
+.items-container1 .icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: #474747;
+}
+.items-container1 v.menu-item:hover .icon {
+  color: #ee6517; /* Change color on hover */
+}
+
+/* Text Styles */
+.items-container1 .menu-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.items-container1 .menu-item p {
+  font-size: 17px;
+  color: #414536;
+}
+
+/* Button */
+.items-container1 .menu-button {
+  margin-top: 230px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #101A24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.items-container1 .menu-button:hover {
+  background-color: #EA6D27;
+  transform: scale(1.05);
+}

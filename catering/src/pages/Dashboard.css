@@ -1,0 +1,119 @@
+/* Dashboard Page */
+.dashboard-page {
+  background-color: #f4f4f4;
+  margin-top: 15.2px;
+  min-height:  73.8vh;
+  /*  Reduced from 70.8vh (moderate decrease)  */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1250px; /* Reduced from 1200px (slight decrease) */
+  margin: 0 auto;
+  padding: 18px; /* Reduced from 20px (slight decrease) */
+  background-color: #fff;
+  border-radius: 7px; /* Reduced from 8px (slight decrease) */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow depth */
+}
+
+/* Dashboard Title */
+.dashboard-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 18px; /* Reduced from 20px (slight decrease) */
+  font-size: 1.8rem; /* Added to slightly reduce title size */
+}
+
+/* No Data Message */
+.no-data {
+  text-align: center;
+  font-size: 1.4rem; /* Reduced from 1.5rem (slight decrease) */
+  color: #666;
+  margin-top: 40px; /* Reduced from 50px (moderate decrease) */
+}
+
+.no-data-icon {
+  font-size: 1.8rem; /* Reduced from 2rem (slight decrease) */
+  margin-right: 9px; /* Reduced from 10px (slight decrease) */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Reduced from 30px (slight decrease) */
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Reduced from 200px (moderate decrease) */
+  gap: 18px; /* Reduced from 20px (slight decrease) */
+}
+
+/* Stat Card */
+.stat-card {
+  padding: 12px; /* Reduced from 15px (slight decrease) */
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Reduced from 5px (slight decrease) */
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 1.1rem; /* Reduced from 1.2rem (slight decrease) */
+  color: #34495e;
+  margin-bottom: 9px; /* Reduced from 10px (slight decrease) */
+}
+
+.stat-card p {
+  font-size: 1.4rem; /* Reduced from 1.5rem (slight decrease) */
+  color: #555;
+}
+
+.profit {
+  color: #27ae60;
+}
+
+.loss {
+  color: #e74c3c;
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px; /* Reduced from 20px (slight decrease) */
+}
+
+/* Chart Card */
+.chart-card {
+  padding: 12px; /* Reduced from 15px (slight decrease) */
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Reduced from 5px (slight decrease) */
+}
+
+.chart-card h3 {
+  font-size: 1.1rem; /* Reduced from 1.2rem (slight decrease) */
+  color: #34495e;
+  margin-bottom: 12px; /* Reduced from 15px (slight decrease) */
+  text-align: center;
+}
+
+/* Ensure charts fit within their containers */
+.chart-card canvas {
+  max-height: 250px; /* Reduced from 300px (moderate decrease) */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    max-width: 100%; /* Ensure it fits smaller screens */
+    padding: 15px; /* Slightly reduced for small screens */
+  }
+}

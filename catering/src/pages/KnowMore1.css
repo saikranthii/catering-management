@@ -1,0 +1,127 @@
+/* Scoped Styles for KnowMore1.js */
+.catering-page {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navbar */
+.catering-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catering-page .logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.catering-page .icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.catering-page .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.catering-page .nav-links li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.catering-page .nav-links li:hover {
+  color: #ff7f50;
+}
+
+/* Hero Section */
+.catering-page .hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.catering-page .hero-image {
+  width: 38%;
+  border-radius: 15px;
+  margin-left: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.catering-page .content {
+  max-width: 50%;
+}
+
+.catering-page h1 {
+  color: rgba(16,26,36,1);
+  font-family: David Libre;
+  font-weight: 500;
+  font-size: 55px;
+  opacity: 1;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0px;
+  width: 80%;
+  margin-left:120px;
+}
+
+.catering-page .highlight {
+  color: #ff7f50;
+}
+
+.catering-page p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  width: 80%;
+  margin-left: 115px;
+}
+
+/* Contact Card */
+.catering-page .contact-card {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 280px;
+  position: relative; /* Allows z-index to work */
+  z-index: 10; /* Puts it in front of other elements */
+  margin: 40px auto; /* Centers it */
+  text-align: left;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  margin-left: 430px;
+  margin-top: -220px;
+}
+
+.catering-page .contact-card h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+/* Flexbox for icon & text spacing */
+.catering-page .contact-card p {
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Aligns icon and text vertically */
+  gap: 10px; /* Adds space between icon and text */
+  font-size: 13px;
+  margin: 5px 8px;
+  margin-left: 15px;
+}
+
+.catering-page .contact-card .icon {
+  font-size: 14px; /* Adjust icon size */
+  color: #ff7f50; /* Highlight color */
+}

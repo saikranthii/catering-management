@@ -1,0 +1,88 @@
+/* Scoped Styles */
+.catering-info {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Info Section */
+.catering-info .info-section {
+  padding: 50px;
+  text-align: left;
+}
+
+/* Text Block */
+.catering-info .info-text {
+  max-width: 600px;
+}
+
+.catering-info .info-text h1 {
+  color: rgba(16,26,36,1);
+  font-family: David Libre;
+  font-weight: 500;
+  font-size: 55px;
+  opacity: 1;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0px;
+  width: 120%;
+  margin-left:120px;
+}
+
+.catering-info .info-text p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 650px;
+  text-align: justify;
+}
+
+/* Layout Container */
+.catering-info .info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Stats Section */
+.catering-info .stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px; /* Decreased from 20px to 5px */
+  row-gap: 20px; /* Keeps the row spacing */
+  max-width: 200px;
+  margin-left: 280px;
+}
+
+.catering-info .stat-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.catering-info .stat-box h2 {
+  font-size: 30px;
+  font-weight: medium;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.catering-info .stat-box p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Food Map */
+.catering-info .food-map img {
+  width: 540px;
+  margin-top: -250px;  
+}

@@ -1,0 +1,86 @@
+
+/* Special Section */
+.special-section {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 50px 20px;
+}
+
+/* Heading */
+.special-heading {
+    color: rgb(0, 0, 0);
+    font-family: David Libre;
+    font-weight: 500;
+    font-size: 55px;
+    opacity: 1;
+  line-height: 1.2;
+  margin-top: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Text */
+.special-text {
+    color: rgba(0,0,0,1);
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400; /* 'Regular' is not valid, use 400 */
+    font-size: 28px;
+    opacity: 1;
+    line-height: 72px;
+    text-align: center;
+
+    
+    /* Centering it in the parent container */
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto; /* Centers horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Image Grid */
+.special-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Image Item */
+.special-item {
+    text-align: center;
+    width: 250px;
+}
+
+/* Image Styling */
+.special-img {
+    width: 80%;
+    margin-top: 40px;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Name */
+.image-name {
+  color: rgba(16,26,36,1);
+  font-family: David Libre;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Image Description */
+.image-desc {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}

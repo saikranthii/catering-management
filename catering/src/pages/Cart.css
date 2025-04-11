@@ -1,0 +1,278 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/* General Reset (Scoped to .cart-page to avoid affecting other pages) */
+.cart-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page Layout */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align from the top */
+  min-height: 68.3vh; /* Ensure at least full viewport height */
+  background-color: #f8f8f8 ; /* Light gray background */
+  text-align: center;
+  padding-top: 20px; /* Adds space at the top */
+  padding-bottom: 40px; /* Extra space to prevent overflow issues */
+}
+
+/* Cart Heading */
+.cart-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff5722; /* Dark orange */
+  font-family: "Chewy", cursive;
+  font-size: 36px;
+}
+
+/* Cart Container */
+.cart-page .cart-container {
+  width: 90vw; /* 90% of the viewport width */
+  max-width: 1300px; /* Prevents excessive stretching */
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0); /* White with slight opacity */
+  border-radius: 12px; /* Rounded corners */
+  position: relative;
+  min-height: 300px; /* Minimum height for small carts */
+  display: flex;
+  flex-direction: column;
+  right: auto;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  */
+}
+
+/* Empty Cart Message */
+.cart-page .empty-cart {
+  font-family: 'Chewy', cursive;
+  font-size: 2.5rem;
+  color: #ff650b; /* Reddish Orange */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  letter-spacing: 1.7px;
+}
+
+/* Shrug Icon */
+.cart-page .shrug-icon {
+  font-size: 2.5rem;
+  color: #ff650b;
+}
+
+/* Cart Items Wrapper */
+.cart-page .cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Individual Cart Item */
+.cart-page .cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #ffffff, #dfdfdf);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+              -3px -3px 8px rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+/* Cart Item Image */
+.cart-page .cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+/* Item Details */
+.cart-page .item-details {
+  flex: 1;
+}
+
+.cart-page .item-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #d84315;
+}
+
+.cart-page .item-details p {
+  margin: 5px 0;
+  color: #6d4c41;
+}
+
+/* Quantity Text */
+.cart-page .quantity-text {
+  font-weight: bold;
+}
+
+/* Remove Button */
+.cart-page .remove-button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-page .remove-button:hover {
+  background-color: #ff5722;
+}
+
+/* Checkout Button */
+.cart-page .checkout-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.cart-page .checkout-button:hover {
+  background-color: #388e3c;
+}
+
+/* Centering Link */
+.cart-page a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cart-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cart-page .cart-container {
+    width: 95vw;
+  }
+
+  .cart-page .cart-item {
+    max-width: 100%;
+  }
+}
+
+.order-summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.order-summary h2 {
+  font-size: 22px;
+  margin-top: 80px;
+  color: #333;
+}
+
+.place-order-button {
+  background-color: #EA6D27;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #d45b1c;
+}
+
+.payment-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.payment-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-dropdown {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #e9ecef;
+  color: #6c757d;
+  
+  text-align: center;
+}
+
+
+/* Existing styles in Cart.css assumed to be present */
+
+/* Delivery Details Section */
+.delivery-details {
+  margin: 20px 0;
+}
+
+.delivery-details h3 {
+  margin-bottom: 15px;
+  color: #2e4a4a;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.time-group .time-selectors {
+  display: flex;
+  gap: 10px;
+}
+
+.time-group select {
+  width: 33%; /* Equal width for hour, minute, period */
+}
+
+/* Disable button styling */
+.place-order-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
