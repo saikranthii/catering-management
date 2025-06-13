@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/catering-management/static/css/main.6bf5da33.css",
-    "main.js": "/catering-management/static/js/main.7a5bdab6.js",
+    "main.js": "/catering-management/static/js/main.d61fff4c.js",
     "static/js/239.35ec35e8.chunk.js": "/catering-management/static/js/239.35ec35e8.chunk.js",
     "static/js/213.ab03b0fd.chunk.js": "/catering-management/static/js/213.ab03b0fd.chunk.js",
     "static/js/732.c448e9a6.chunk.js": "/catering-management/static/js/732.c448e9a6.chunk.js",
@@ -75,7 +75,7 @@
     "static/media/person4.jpg": "/catering-management/static/media/person4.fbdcba0b174b3ea802d7.jpg",
     "index.html": "/catering-management/index.html",
     "main.6bf5da33.css.map": "/catering-management/static/css/main.6bf5da33.css.map",
-    "main.7a5bdab6.js.map": "/catering-management/static/js/main.7a5bdab6.js.map",
+    "main.d61fff4c.js.map": "/catering-management/static/js/main.d61fff4c.js.map",
     "239.35ec35e8.chunk.js.map": "/catering-management/static/js/239.35ec35e8.chunk.js.map",
     "213.ab03b0fd.chunk.js.map": "/catering-management/static/js/213.ab03b0fd.chunk.js.map",
     "732.c448e9a6.chunk.js.map": "/catering-management/static/js/732.c448e9a6.chunk.js.map",
@@ -83,6 +83,6 @@
   },
   "entrypoints": [
     "static/css/main.6bf5da33.css",
-    "static/js/main.7a5bdab6.js"
+    "static/js/main.d61fff4c.js"
   ]
 }
