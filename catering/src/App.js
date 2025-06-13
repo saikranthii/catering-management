@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Page Imports
 import HomePage from "./pages/HomePage";
@@ -22,7 +22,7 @@ import EditProfile from "./components/EditProfile";
 
 const App = () => {
   return (
-    <Router basename="/catering-management">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
