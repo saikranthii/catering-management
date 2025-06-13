@@ -1,0 +1,32 @@
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto; /* Ensures height adjusts based on content */
+    margin: 0 auto;
+    padding: 10px; /* Reduced padding */
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+  
+  .container4 .section {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .container4 .section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff6600;
+  }
+  
+  .container4 .section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+  }
+  

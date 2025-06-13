@@ -1,0 +1,167 @@
+
+/* Special Section */
+.special-section {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 50px 20px;
+}
+
+/* Heading */
+.special-heading {
+    color: rgb(0, 0, 0);
+    font-family: David Libre;
+    font-weight: 500;
+    font-size: 55px;
+    opacity: 1;
+  line-height: 1.2;
+  margin-top: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Text */
+.special-text {
+    color: rgba(0,0,0,1);
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400; /* 'Regular' is not valid, use 400 */
+    font-size: 28px;
+    opacity: 1;
+    line-height: 72px;
+    text-align: center;
+
+    
+    /* Centering it in the parent container */
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto; /* Centers horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Image Grid */
+.special-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Image Item */
+.special-item {
+    text-align: center;
+    width: 250px;
+}
+
+/* Image Styling */
+.special-img {
+    width: 80%;
+    margin-top: 40px;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Name */
+.image-name {
+  color: rgba(16,26,36,1);
+  font-family: David Libre;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Image Description */
+.image-desc {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .special-section {
+        padding: 40px 15px; /* Reduced padding */
+    }
+
+    .special-heading {
+        font-size: 45px; /* Smaller heading */
+        margin-bottom: 8px;
+    }
+
+    .special-text {
+        font-size: 24px; /* Slightly smaller text */
+        line-height: 60px; /* Adjusted line height */
+        max-width: 90%; /* Flexible width */
+    }
+
+    .special-images {
+        gap: 20px; /* Reduced gap */
+    }
+
+    .special-item {
+        width: 220px; /* Slightly smaller item */
+    }
+
+    .special-img {
+        width: 85%; /* Slightly larger relative width */
+        margin-top: 30px;
+    }
+
+    .image-name {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .image-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .special-section {
+        padding: 30px 10px;
+    }
+
+    .special-heading {
+        font-size: 35px;
+        margin-top: 0; /* Reset negative margin */
+        margin-bottom: 6px;
+    }
+
+    .special-text {
+        font-size: 20px;
+        line-height: 48px;
+        max-width: 85%;
+    }
+
+    .special-images {
+        gap: 15px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .special-item {
+        width: 280px; /* Wider for single column */
+    }
+
+    .special-img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .image-name {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .image-desc {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,101 @@
+/* Main Dashboard Container */
+.provider-dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrolling on the whole layout */
+  }
+  
+  /* Fixed Navbar at Top */
+  .navbar3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #ffffff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Main Layout (Below Navbar) */
+  .provider-dashboard__main {
+    display: flex;
+    height: calc(100vh - 60px); /* Full height minus navbar */
+    margin-top: 60px;
+  }
+  
+  /* Fixed Sidebar on Left */
+  .provider-dashboard__sidebar {
+    width: 250px;
+    background-color: #1c2732;
+    color: white;
+    height: calc(100vh - 60px); /* Adjust based on your navbar height */
+    position: fixed;
+    left: 0;
+    top: 170px; /* Adjust based on your navbar height */
+    border-top: 4px solid #ff6f00; /* Border only on top */
+    border-right: 4px solid #ff6f00; /* Border only on left */
+    border-radius: 0 18px 0 0; /* Radius on top-right corner of sidebar */
+  }
+  
+  /* Sidebar Header */
+  .provider-dashboard__sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #ff6200;
+  }
+  
+  .provider-dashboard__sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Sidebar Menu */
+  .provider-dashboard__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .provider-dashboard__menu-item {
+    display: flex; /* Flex for icon and text alignment */
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #ff6200;
+    transition: all 0.3s ease;
+  }
+  
+  .provider-dashboard__menu-item:hover {
+    background: #ffe5d1;
+    color: #e65500;
+  }
+  
+  .provider-dashboard__menu-item.active {
+    background: hsl(23, 100%, 56%);
+    color: #fff;
+  }
+  
+  /* Icon Styling */
+  .menu-icon {
+    margin-right: 10px; /* Space between icon and text */
+    width: 20px; /* Consistent width */
+    text-align: center;
+  }
+  
+  /* Scrollable Content Area */
+  .provider-dashboard__content {
+    margin-left: 250px; /* Adjusted to fit next to the sidebar */
+    margin-top: 100px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow-y: auto; /* Allow scrolling inside the content area */
+    background-color: #f9f9f9;
+    /* Removed border-top-right-radius since it’s now on the sidebar */
+  }
+  

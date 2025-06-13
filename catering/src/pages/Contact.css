@@ -1,0 +1,112 @@
+/* Center the form container */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f8f8;
+  font-family: "Poppins", sans-serif; /* Modern font */
+  padding: 20px;
+  text-align: center;
+}
+.contact-form-container h2{
+  color: rgba(16,26,36,1);
+  font-family: David Libre;
+  font-weight: 500;
+  font-size: 55px;
+  opacity: 1;
+line-height: 1.2;
+  text-align: center;
+  margin-top: 0px;
+}
+/* Subtext styling */
+.contact-subtext {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 500px; /* Limit width for better readability */
+}
+
+/* Centering form content */
+.contact-form {
+  background: white;
+  padding: 40px; /* Equal padding on all sides */
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content inside */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Input rows with proper spacing */
+/* Input rows with proper spacing */
+.form-group-row {
+  display: flex;
+  gap: 50px; /* Increased gap */
+  width: 100%;
+  margin-bottom: 5px; /* Extra gap before next section */
+  justify-content: center;
+}
+
+
+/* Ensure individual form elements are centered */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns input fields to center */
+  margin-bottom: 20px; /* Increased spacing */
+  width: 100%;
+}
+
+/* Labels left-aligned */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start; /* Ensures labels are left-aligned */
+}
+
+/* Input fields */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  padding-right: 15px; /* Added right-side padding */
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: border-color 0.3s ease-in-out;
+  text-align: left; /* Centers text inside the input */
+}
+
+input:focus, textarea:focus {
+  border-color: #EA6D27;
+  outline: none;
+}
+
+/* Textarea styling */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button styling */
+.send-button {
+  width: 102%;
+  background-color: #EA6D27;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.send-button:hover {
+  background-color: #b04e1c;
+}

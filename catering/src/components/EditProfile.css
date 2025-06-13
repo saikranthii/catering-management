@@ -1,0 +1,87 @@
+.edit-profile-page {
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-profile-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #EA6D27;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #EA6D27 0%, #ff8c00 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(234, 109, 39, 0.3);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #d65e20 0%, #e07b00 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(234, 109, 39, 0.5);
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.success-message {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "DM Sans", sans-serif;
+}

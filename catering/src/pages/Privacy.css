@@ -1,0 +1,91 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.privacy-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffefe6); /* White to light orange */
+  padding: 50px 20px;
+}
+
+.privacy-container {
+  max-width: 900px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(255, 102, 0, 0.2); /* Orange shadow */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  border-left: 8px solid #ff6600; /* Accent orange line */
+}
+
+.privacy-container h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #ff6600; /* Elite Caterings Orange */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.privacy-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.privacy-container h2 {
+  font-size: 22px;
+  margin-top: 25px;
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.privacy-container ul {
+  margin-left: 25px;
+  list-style: none;
+}
+
+.privacy-container ul li {
+  font-size: 16px;
+  color: #444;
+  margin: 8px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.privacy-container ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6600; /* Orange checkmark */
+  font-weight: bold;
+}
+
+.privacy-container section {
+  margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 25px;
+    border-left: 6px solid #ff6600;
+  }
+
+  .privacy-container h1 {
+    font-size: 26px;
+  }
+
+  .privacy-container h2 {
+    font-size: 20px;
+  }
+
+  .privacy-container p,
+  .privacy-container ul li {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,124 @@
+/* Section Styling */
+.pros-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 100px 0px ;
+    background-color: #f0f0f0;
+}
+
+/* Container */
+.pros-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    gap: 40px;
+}
+
+/* Left Image */
+.pros-image img {
+    width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Side Content */
+.pros-content {
+    flex: 1;
+}
+
+/* Heading */
+.pros-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #101A24;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.pros-description {
+    width: 661px;
+    color: #474747;
+    font-family: "Tangerine", cursive;
+    font-weight: 400; /* 'Regular' is invalid, using 400 */
+    font-size: 48px;
+    opacity: 1;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 40px; /* Adjust the value as needed */
+}
+
+/* List Container - Two Columns */
+.pros-list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+/* List */
+.pros-list {
+    list-style: none;
+    padding: 20px 50px;
+   
+}
+.pros-heading
+{
+    color: rgb(0, 0, 0);
+    font-family: David Libre;
+    font-weight: 500;
+    font-size: 55px;
+    opacity: 1;
+  line-height: 1.2;
+  margin-top: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pros-list li {
+    color: rgba(92,101,116,1);
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 18px;
+    align-items:center;
+    margin-bottom: 12px;
+}
+
+/* Tick Icon */
+.check-icon {
+    color: #EA6D27;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Button */
+.pros-button {
+    background: #101A24;
+    border: none; /* Removes border */
+    outline: none; /* Removes focus outline */
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    
+    right: 380px;
+    text-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    font-family: David Libre;
+    font-weight: 500; /* Medium weight */
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    padding: 19px 15px;
+}
+
+.pros-button:hover {
+    background: #EA6D27;
+    transform: scale(1.05);
+}
