@@ -22,7 +22,7 @@ import EditProfile from "./components/EditProfile";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/catering-management">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
